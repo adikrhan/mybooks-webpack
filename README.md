@@ -1,2 +1,2 @@
-# books-js
+# mybooks-webpack
 MyBooks app 

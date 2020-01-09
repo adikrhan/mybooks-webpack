@@ -1,0 +1,30 @@
+{
+  "name": "my-books-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open",
+    "compile:sass": "node-sass src/sass/main.scss src/css/style.css -w"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.7.0",
+    "axios": "^0.19.0",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.7",
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.13.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "author": "Adi Krhan",
+  "license": "ISC"
+}

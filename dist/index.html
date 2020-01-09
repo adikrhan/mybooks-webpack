@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo-box">
+                <h1 class="header__logo">myBooks<i class="fas fa-book icon-margin-left header__logo-icon"></i></h1>
+            </div>
+
+            <div class="header__search-form">
+                <form action="" class="form">
+                    <div class="form__group">
+                        <input type="text" class="form__input" placeholder="Search books" required>
+                        <a href="#"><i class="fas fa-search form__icon"></i></a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="header__nav-group">
+                <i class="fas fa-bars header__mobile-nav-icon"></i>
+                <ul class="header__list">
+                    <li class="header__list-item"><a href="#" class="header__list-link header__home-link">Home</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link header__login-link">Log in</a><i class="fas fa-user icon-margin-left"></i></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="section-sidebar">
+            <div class="navigation__container">
+                <div class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__list-item"><a href="#" class="navigation__link navigation__link--mybooks"><i class="fas fa-book navigation__list-icon"></i>My books</a></li>
+                        <li class="navigation__list-item"><a href="#" class="navigation__link navigation__link--blog"><i class="fas fa-pencil-alt navigation__list-icon"></i>Blog</a></li>
+                        <li class="navigation__list-item"><a href="#" class="navigation__link"><i class="fas fa-comments navigation__list-icon"></i>Forum</a></li>
+                        <li class="navigation__list-item"><a href="#" class="navigation__link"><i class="fas fa-shopping-bag navigation__list-icon"></i>Shop & Trade</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="count">
+                <h3 class="heading-tertiary margin-bottom-small">Your stats:</h3>
+                <div class="count__group">
+                    <span class="count__number count__number--read">0</span>
+                    <p class="count__text">
+                        books read in total
+                    </p>
+                    <span class="count__arrow">&rarr;</span>
+                </div>
+
+                <div class="count__group">
+                    <span class="count__number count__number--review">0</span>
+                    <p class="count__text">
+                        reviews written
+                    </p>
+                    <span class="count__arrow">&rarr;</span>
+                </div>
+
+                <div class="count__group">
+                    <span class="count__number count__number--wish">0</span>
+                    <p class="count__text">
+                        books on your wishlist
+                    </p>
+                    <span class="count__arrow">&rarr;</span>
+                </div>
+            </div>
+
+            <div class="invite margin-bottom-medium">
+                <h3 class="heading-tertiary margin-bottom-small">Invite a friend</h3>
+                <div class="invite__form">
+                    <form action="#" class="form margin-bottom-small">
+                        <input type="email" class="form__input margin-bottom-small" placeholder="Email adress" required>
+                    </form>
+                    <button class="btn btn--green">Send</button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section-feed">
+
+                <!-- <h3 class="heading-tertiary margin-bottom-medium">Latest activities</h3> -->
+
+                <!-- <div class="search__item">
+                    <div class="search__img-container">
+                        <img src="img/search-res-1.PNG" alt="Blog image 1" class="search__img">
+                    </div>
+                    <div class="search__text-container">
+                        <h4 class="heading-quaternary">Subliminal: How Your Unconscious Mind Rules Your Behavior</h4>
+                        <h6 class="heading-senary">by Leonard Mlodinow</h6>
+                        <span class="search__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                        <span class="search__rating-number">(14852 ratings)</span>
+                    </div>
+                    <span class="search__list-button search__list-button--1">
+                        <i class="fas fa-check-square icon-margin-right search__list-button-icon--1"></i>
+                        Read
+                    </span>
+                    <span class="search__list-button search__list-button--2">
+                        <i class="fas fa-heart icon-margin-right search__list-button-icon--2"></i>
+                        Wishlist
+                    </span>
+                </div>
+
+                <div class="search__item">
+                    <div class="search__img-container">
+                        <img src="img/search-res-2.PNG" alt="Blog image 1" class="search__img">
+                    </div>
+                    <div class="search__text-container">
+                        <h4 class="heading-quaternary">Moneyland</h4>
+                        <h6 class="heading-senary">by Oliver Bullough</h6>
+                        <span class="search__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                        <span class="search__rating-number">(12058 ratings)</span> 
+                    </div>
+                    <span class="search__list-button search__list-button--1">
+                        <i class="fas fa-check-square icon-margin-right search__list-button-icon--1"></i>
+                        Read
+                    </span>
+                    <span class="search__list-button search__list-button--2">
+                        <i class="fas fa-heart icon-margin-right search__list-button-icon--2"></i>
+                        Wishlist
+                    </span>
+                </div>
+
+                <div class="search__item">
+                    <div class="search__img-container">
+                        <img src="img/search-res-3.PNG" alt="Blog image 1" class="search__img">
+                    </div>
+                    <div class="search__text-container">
+                        <h4 class="heading-quaternary">The Cellist of Sarajevo</h4>
+                        <h6 class="heading-senary">by Steven Galloway</h6>
+                        <span class="search__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                        <span class="search__rating-number">(9425 ratings)</span>
+                    </div>
+                    <span class="search__list-button search__list-button--1">
+                        <i class="fas fa-check-square icon-margin-right search__list-button-icon--1"></i>
+                        Read
+                    </span>
+                    <span class="search__list-button search__list-button--2">
+                        <i class="fas fa-heart icon-margin-right search__list-button-icon--2"></i>
+                        Wishlist
+                    </span>
+                </div>
+
+                <div class="search__item">
+                    <div class="search__img-container">
+                        <img src="img/search-res-4.PNG" alt="Blog image 1" class="search__img">
+                    </div>
+                    <div class="search__text-container">
+                        <h4 class="heading-quaternary">Min hemlighet</h4>
+                        <h6 class="heading-senary">by Petter Stordalen</h6>
+                        <span class="search__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                        <span class="search__rating-number">(5848 ratings)</span>
+                    </div>
+                    <span class="search__list-button search__list-button--1">
+                        <i class="fas fa-check-square icon-margin-right search__list-button-icon--1"></i>
+                        Read
+                    </span>
+                    <span class="search__list-button search__list-button--2">
+                        <i class="fas fa-heart icon-margin-right search__list-button-icon--2"></i>
+                        Wishlist
+                    </span>
+                </div>
+
+                <div class="search__item">
+                    <div class="search__img-container">
+                        <img src="img/search-res-5.PNG" alt="Blog image 1" class="search__img">
+                    </div>
+                    <div class="search__text-container">
+                        <h4 class="heading-quaternary">Backbone: The Modern Man's Ultimate Guide to Purpose, Passion and Power</h4>
+                        <h6 class="heading-senary">by David H Wagner</h6>
+                        <span class="search__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                        <span class="search__rating-number">(4056 ratings)</span>
+                    </div>
+                    <span class="search__list-button search__list-button--1">
+                        <i class="fas fa-check-square icon-margin-right search__list-button-icon--1"></i>
+                        Read
+                    </span>
+                    <span class="search__list-button search__list-button--2">
+                        <i class="fas fa-heart icon-margin-right search__list-button-icon--2"></i>
+                        Wishlist
+                    </span>
+                </div> -->
+                
+                <!-- <div class="activities__item--blogpost margin-bottom-medium">
+                    <span class="activities__type">Blogpost</span>
+
+                    <div class="activities__img-group">
+                        <div class="activities__img">
+                            <img src="img/blog-img-1.png" alt="Blog image 1" class="activities__img--1">
+                            <span class="activities__img-caption">254 views</span>
+                        </div>
+                    </div>
+                    <div class="activities__text-group margin-bottom-small">
+                        <h4 class="heading-quaternary">The top benefit of reading books</h4>
+                        <span class="activities__author">Adi Krhan</span>
+                        <span class="activities__date">2019-11-29</span>
+                        <p class="activities__text marin">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Dolores iusto officia ullam aliquam perspiciatis maxime, dolorum suscipit magnam dolorem 
+                            ut, dicta sapiente vel blanditiis eum excepturi placeat temporibus, perferendis esse?
+                        </p>
+                    </div>
+                    <a href="#" class="activities__btn">Read more &rarr;</a>
+                </div>
+
+                <div class="activities__item--blogpost margin-bottom-medium">
+                    <span class="activities__type">Review</span>
+
+                    <div class="activities__img-group">
+                        <div class="activities__img">
+                            <img src="img/review-img-1.PNG" alt="Blog image 1" class="activities__img--1">
+                            <span class="activities__img-caption">316 views</span>
+                        </div>
+                    </div>
+
+                    <div class="activities__text-group margin-bottom-small">
+                        <h4 class="heading-quaternary">The 7 Habits of Highly Effective People</h4>
+                        <span class="activities__author">Adi Krhan</span>
+                        <span class="activities__date">2019-11-15</span>
+                        <p class="activities__text marin">Est, eius doloremque beatae possimus deleniti ullam.. 
+                            Veniam temporibus id explicabo modi doloribus libero, iusto, corporis iure optio tempore error! 
+                            Neque ex maiores aliquam vel blanditiis velit porro modi!
+                        </p>
+                    </div>
+
+                    <a href="#" class="activities__btn">Read more &rarr;</a>
+                </div>
+
+
+                <div class="activities__pagination">
+                    <span><i class="fas fa-arrow-alt-circle-left activities__pagination--arrow1"></i></span>
+                    <span class="activities__pagination-numbers">1 2 3 4</span>
+                    <span><i class="fas fa-arrow-alt-circle-right activities__pagination--arrow2"></i></span>
+                </div> -->
+        </section>
+        
+        <section class="section-topbooks">
+            <h3 class="heading-tertiary margin-bottom-medium">Recommendations</h3>
+            
+            <div class="best__month margin-bottom-medium clearfix">
+                <img src="img/best-book-1.PNG" alt="" class="best__book-img">
+                <h5 class="heading-quinary">The 5 Am Club</h4>
+                <span class="best__rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </span>
+                <span class="best__rating-number">(8654 ratings)</span>
+                <a href="#" class="best__link">Check it out</a>
+            </div>
+
+            <div class="best__month margin-bottom-medium clearfix">
+                <img src="img/best-book-2.PNG" alt="" class="best__book-img">
+                <h5 class="heading-quinary">Daring Greatly: How...</h4>
+                <span class="best__rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </span>
+                <span class="best__rating-number">(12058 ratings)</span>
+                <a href="#" class="best__link">Check it out</a>
+            </div>
+
+            <div class="best__month margin-bottom-medium clearfix">
+                <img src="img/best-book-3.PNG" alt="" class="best__book-img">
+                <h5 class="heading-quinary">Range: Why Generali...</h4>
+                <span class="best__rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </span>
+                <span class="best__rating-number">(6942 ratings)</span>
+                <a href="#" class="best__link">Check it out</a>
+            </div>
+            
+        </section>
+    </main>
+
+
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>

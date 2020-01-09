@@ -16,3 +16,5 @@ Not checked for Cross-browser compatibility yet, developed using Chrome.
 
 Somewhat responsive to different screen sizes, but not 100% yet. 
 
+Styling made with use of Sass. The scss files are excluded from the repository because of limit on number of files.
+
